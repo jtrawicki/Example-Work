@@ -34,8 +34,8 @@ The configuration details of each machine may be found below.
 |--------------------|------------|------------|------------------|
 | JumpBoxProvisioner | Gateway    | 10.0.0.9   | Ubuntu 18.04     |
 | Web-1              | Webserver  | 10.0.0.10  | Ubuntu 18.04     |
-| Web-2              | Webserver  | 10.0.0.12  | Ubuntu 18.04     |
-| Web-3              | Webserver  | 10.0.0.13  | Ubuntu 18.04     |
+| Web-2              | Webserver  | 10.0.0.11  | Ubuntu 18.04     |
+| Web-3              | Webserver  | 10.0.0.12  | Ubuntu 18.04     |
 | ELKServer          | ELK Server | 10.1.0.4   | Ubuntu 18.04     |
 
 ### Access Policies
@@ -53,7 +53,7 @@ A summary of the access policies in place can be found in the table below.
 | NAME               | Publicly Accessible | Allowed IP Addresses     |
 |--------------------|---------------------|--------------------------|
 | JumpBoxProvisioner | Yes                 | XXX.XXX.XXX.XX5          |
-| Web-1              | no                  | 10.0.0.9                 |
+| Web-1              | No                  | 10.0.0.9                 |
 | Web-2              | No                  | 10.0.0.9                 |
 | Web-3              | No                  | 10.0.0.9                 |
 | ELKServer          | Yes/No              | XXX.XXX.XXX.XX5/10.0.0.9 |
@@ -71,29 +71,29 @@ The install-elk playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Output of docker ps](Images/docker_ps_output.PNG)
+![Output of docker ps](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Webserver-1/2/3 at 10.0.0.10, 10.0.0.11, 10.0.0.12
 
-We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+I have installed filebeats and metricbeats on each of the webservers via Ansible playbooks
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
+- Filebeats: allows for the input of specific log files and automates the harvesting of the logs for retention and analysis at a later date
+- Metricbeats: allows for the collection of specifc OS and specified service metrics running on the system and sends them to a designated output such as Elasticsearch or Logstash.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the install-elk file to /etc/ansible.
+- Update the /etc/ansible/hosts file to include the IP of the ELK server under the [elk] section
+- Run the playbook, and navigate to 20.75.78.254:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+To run the elk-install playbook, on the JumBoxProvisioner:
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- navigate to /etc/ansible
+- run the command: ansible-playbook elk-install.yml
+
