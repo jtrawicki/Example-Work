@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Azure VM Networks](Images/AzureNetwork.png)
+![Azure VM Network](Images/AzureNetwork.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+ 
 
 This document contains the following details:
 - Description of the Topologu
@@ -29,46 +29,49 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| NAME               | FUNCTION   | IP ADDRESS | OPERATING SYSTEM |
+|--------------------|------------|------------|------------------|
+| JumpBoxProvisioner | Gateway    | 10.0.0.9   | Ubuntu 18.04     |
+| Web-1              | Webserver  | 10.0.0.10  | Ubuntu 18.04     |
+| Web-2              | Webserver  | 10.0.0.12  | Ubuntu 18.04     |
+| Web-3              | Webserver  | 10.0.0.13  | Ubuntu 18.04     |
+| ELKServer          | ELK Server | 10.1.0.4   | Ubuntu 18.04     |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the JumpBoxProvisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:  xxx.xxx.xxx.xx5
+(IP obfuscated for security purposes)
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the JumpBoxProvisioner.
+- _Provisioner internal ip 10.0.0.9
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| NAME               | Publicly Accessible | Allowed IP Addresses     |
+|--------------------|---------------------|--------------------------|
+| JumpBoxProvisioner | Yes                 | XXX.XXX.XXX.XX5          |
+| Web-1              | no                  | 10.0.0.9                 |
+| Web-2              | No                  | 10.0.0.9                 |
+| Web-3              | No                  | 10.0.0.9                 |
+| ELKServer          | Yes/No              | XXX.XXX.XXX.XX5/10.0.0.9 |
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because using Ansible playbooks allows for easily scaleable, identifcal deployments vs individual manual install processes.
 
-The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+The install-elk playbook implements the following tasks:
+- Installs the docker io_
+- Installs python3 and the docker python module
+- Configures the docker container to allow access to more memory
+- Downloads and launches a docker ELK container
+- Ensures the ELK docker services starts on boot of the machine
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Output of docker ps](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
