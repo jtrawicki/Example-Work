@@ -104,4 +104,4 @@ To run the elk-install playbook, on the JumBoxProvisioner:
 - navigate to /etc/ansible
 - run the command: ansible-playbook elk-install.yml
 
->>>>>>> a75c87b45f2af36ceacdd99d2bf96834f8e0f5e2
+
