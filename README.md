@@ -91,7 +91,7 @@ SSH into the control node and follow the steps below:
 - Copy the install-elk file to /etc/ansible.
 - Update the /etc/ansible/hosts file to include the IP of the ELK server under the [elk] section
 - Run the playbook, and navigate to 20.75.78.254:5601/app/kibana to check that the installation worked as expected.
-<<<<<<< HEAD
+
 
 To run the elk-install playbook, on the JumBoxProvisioner:
 
