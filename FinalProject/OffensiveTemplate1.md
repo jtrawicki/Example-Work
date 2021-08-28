@@ -40,7 +40,7 @@ The following vulnerabilities were identified on each target:
    111     rpcbind      2-4
    139     netbios-ssn  Samba smdb 3.x
    445     netbios-ssn  Samba smbd 3.x
-     ```
+ ```
 
    ![nmapsV](Images/nmapsV.png)
 
