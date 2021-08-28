@@ -41,9 +41,14 @@ Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/).
 ```
  ![ROTT](Images/rotterdam.PNG)
     
-2. What is the username of the Windows user whose computer is infected?
-3. What are the IP addresses used in the actual infection traffic?
-4. As a bonus, retrieve the desktop background of the Windows host.
+```bash   
+   2. What is the username of the Windows user whose computer is infected?
+      -mattijs.dervies
+```
+ ![CNAME](Images/RotterdamUsername.png)
+ 
+4. What are the IP addresses used in the actual infection traffic?
+5. As a bonus, retrieve the desktop background of the Windows host.
 
 ---
 
