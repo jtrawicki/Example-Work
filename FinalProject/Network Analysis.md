@@ -14,7 +14,7 @@
 
   Both of these answers can be found here:
 ```
- ![LDAP2](Images\LDAPAD2.png)
+ ![LDAP2](Images/LDAPAD2.png)
  
 
 3. What is the name of the malware downloaded to the 10.6.12.203 machine?
