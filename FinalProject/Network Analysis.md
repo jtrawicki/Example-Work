@@ -6,7 +6,7 @@
   ## Time Thieves ##
   You must inspect your traffic capture to answer the following questions:
 
-   1. What is the domain name of the users' custom site?
+   1. What is the domain name of the users custom site?
       -frank-n-ted.com
 
    2. What is the IP address of the Domain Controller (DC) of the AD network?
