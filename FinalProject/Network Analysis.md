@@ -16,13 +16,20 @@
 ```
  ![LDAP2](Images/LDAPAD2.png)
  
+```bash
+   3. What is the name of the malware downloaded to the 10.6.12.203 machine?
+      -June11.dll
+```
+ ![GETREQ](Images/getrequest.png)
+ 
+ ```bash
+   ## Once you have found the file, export it to your Kali machine's desktop. ##
+Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/). 
 
-3. What is the name of the malware downloaded to the 10.6.12.203 machine?
-   - Once you have found the file, export it to your Kali machine's desktop.
-4. Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/). 
 5. What kind of malware is this classified as?
-
----
+   -Trojan
+```
+ ![VT](Images\VirusTotal.png)
 
 ## Vulnerable Windows Machine
 
