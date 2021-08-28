@@ -33,7 +33,9 @@ The following vulnerabilities were identified on each target:
   - Critical
   - Vulnerabilities
 
- ```<b> Port    Service      Version </b>
+ ```
+ html
+ <b> Port    Service      Version </b>
    22      ssh          OpenSSH 6.7p1
    80      http         Apache httpd 2.4.10
    111     rpcbind      2-4
