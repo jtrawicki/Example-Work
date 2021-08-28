@@ -19,12 +19,15 @@
  ```
   ![nmapA](Images/nmap-A.png)
   
-     
-- Name of VM 2
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Etc.
+```bash  
+    
+   - Name of VM 2
+     - **Operating System**: Linux 3.2-4.9
+     - **Purpose**: Wordpress Server
+     - **IP Address**: 192.168.1.115
+```
+ ![nmapA2](Images/nmapA2)
+ 
 
 ### Description of Targets
 _TODO: Answer the questions below._
