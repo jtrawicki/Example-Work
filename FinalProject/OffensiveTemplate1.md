@@ -31,16 +31,30 @@ This scan identifies the services below as potential points of entry:
 The following vulnerabilities were identified on each target:
 - Target 1
   - List of Critical Vulnerabilities
-
+```  
+  
+ ![nmapsV](Images/nmapsV.png)
+ 
+ ```bash
    Port    Service      Version 
    22      ssh          OpenSSH 6.7p1
    80      http         Apache httpd 2.4.10
    111     rpcbind      2-4
    139     netbios-ssn  Samba smdb 3.x
    445     netbios-ssn  Samba smbd 3.x
+   
+   1. Open SSH 
+  - CVE-2016-0777 
+  - CVE score of 4.0 
+2. Open NetBIOS -ssn Samba 
+  - CVE-2014-0178        CVE-2014-0244 
+  - CVE score of 3.5     CVE score of 3.3 
+3. Weak Passwords 
+  - CVE-2020-7519 also called CWE-521 
+  - CVE score of 5.0
  ```
 
-   ![nmapsV](Images/nmapsV.png)
+   
 
 ### Exploitation
 
