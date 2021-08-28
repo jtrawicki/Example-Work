@@ -39,7 +39,7 @@ Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/).
       - IP address: 172.16.4.205
       - MAC address: 00:59:07:b0:63:a4
 ```
- ![ROTT](Images/Rotterdam.png)
+ ![ROTT](Images/rotterdam.png)
     
 2. What is the username of the Windows user whose computer is infected?
 3. What are the IP addresses used in the actual infection traffic?
