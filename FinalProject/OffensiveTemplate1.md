@@ -15,11 +15,12 @@ $ nmap 192.168.1.110 -A
 ```
   ![nmap-A](Images/nmap-A.png)
 
+```bash
 This scan identifies the services below as potential points of entry:
+
 - Target 1
-  - List of
-  - Exposed Services 
-  
+  - List of exponsed service:
+   
   22  SSH
   80  http
   111  rpcbind
@@ -29,11 +30,8 @@ This scan identifies the services below as potential points of entry:
 
 The following vulnerabilities were identified on each target:
 - Target 1
-  - List of
-  - Critical
-  - Vulnerabilities
+  - List of Critical Vulnerabilities
 
- ```bash
    Port    Service      Version 
    22      ssh          OpenSSH 6.7p1
    80      http         Apache httpd 2.4.10
