@@ -51,7 +51,7 @@ Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/).
    3. What are the IP addresses used in the actual infection traffic?
       -185.243.115.84
  ```
-  ![Infect](Images/InfConvo.png)
+  ![Infect](Images/InfConvo2.png)
 
 ---
 
