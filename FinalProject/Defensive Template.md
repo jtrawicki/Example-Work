@@ -36,11 +36,11 @@
    The target of this attack was: `Target 1`: 192.168.1.110
 
    Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
-
+```
 
 #### Name of Alert 1
 
-
+```bash
    'Excessive HTTP Errors' is implemented as follows:
      - **Metric**: http.response.status.code
      - **Threshold**: 400 every 5 minutes
@@ -50,11 +50,15 @@
  ![Watch1](Images/Watch1.PNG)
 
 #### Name of Alert 2
-Alert 2 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+
+```bash
+   'HTTP Request Size' is implemented as follows:
+  - **Metric**: http.request.bytes
+  - **Threshold**: 3500 per 1 minute
+  - **Vulnerability Mitigated**: A comparitvely large volume of traffic moving ovewr the system would be unusual and warrant investigation.
+  - **Reliability**: TODO: Based on volume of network traffic, this Watcher should not trigger many flase positives.
+```
+ ![Watch2](Images/Watch2.PNG)
 
 #### Name of Alert 3
 Alert 3 is implemented as follows:
