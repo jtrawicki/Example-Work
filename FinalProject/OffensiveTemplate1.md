@@ -68,7 +68,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   
   
   ```bash
-     - From /var/www, a grep was performed to look for Flag1: grep -RE flag html 
+     - From /var/www, a grep was performed to find Flag1: grep -RE flag html 
      - A lengthy output resulted, but the first flag was found at the end of the output.
   
 - Target 1
