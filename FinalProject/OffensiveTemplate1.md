@@ -41,7 +41,7 @@ The following vulnerabilities were identified on each target:
    445     netbios-ssn  Samba smbd 3.x
      
 
-   ![nmapsV](Images/nmapsV)
+   ![nmapsV](Images/nmapsV.png)
 
 ### Exploitation
 _TODO: Fill out the details below. Include screenshots where possible._
