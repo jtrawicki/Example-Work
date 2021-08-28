@@ -56,9 +56,14 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   ```
    ![Flag1](Images/flag1a.png)
    
+   ```bash
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - A WPScan was used to identify the users and vulnerable plugin on the Wordpress server: 
+      - The command used:  wpscan --url http://192.168.1.110/wordpress -eu
+      - The following information was gathered from the wpscan:
+   ```
+     ![WPscan1](Images/wpscan1.png)
+    
   
   ```bash
   - `flag2.txt`: 
