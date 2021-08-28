@@ -66,6 +66,11 @@ Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/).
 ```bash
       - Windows username: elmer.blanco
 ```
- ![TCNAME](Images/torrentCName.png)
+ ![TCNAME](Images/torrentCName.JPG)
+ 
+```bash 
+   2. Which torrent file did the user download?
+      - Betty_Boop_Rhythm_on_the_Reservation.avi.torrent
+```
+ ![TName](Images/InfectedMachineTorrent.JPG)
 
-2. Which torrent file did the user download?
