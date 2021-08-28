@@ -29,7 +29,7 @@ Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/).
 5. What kind of malware is this classified as?
    -Trojan
 ```
- ![VT](Images/VirusTotal.png)
+ ![VT](Images/virustotal.png)
 
 ## Vulnerable Windows Machine
 
