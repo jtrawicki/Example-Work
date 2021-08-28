@@ -33,13 +33,13 @@ The following vulnerabilities were identified on each target:
   - Critical
   - Vulnerabilities
 
-  Port    Service      Version
+ ```<b> Port    Service      Version </b>
    22      ssh          OpenSSH 6.7p1
    80      http         Apache httpd 2.4.10
    111     rpcbind      2-4
    139     netbios-ssn  Samba smdb 3.x
    445     netbios-ssn  Samba smbd 3.x
-     
+     ```
 
    ![nmapsV](Images/nmapsV.png)
 
