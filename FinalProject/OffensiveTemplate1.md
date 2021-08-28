@@ -54,7 +54,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - Target 1
   - `flag1.txt`:
   ```
-   ![Flag1](Images/flag1.png)
+   ![Flag1](Images/flag1a.png)
    
     - **Exploit Used**
       - _TODO: Identify the exploit used_
