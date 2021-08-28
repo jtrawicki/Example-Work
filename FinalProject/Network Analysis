@@ -1,9 +1,10 @@
-# Network Forensic Analysis Report
+ Network Forensic Analysis Report
 
 
 ```bash
-## Time Thieves ##
-You must inspect your traffic capture to answer the following questions:
+
+  ## Time Thieves ##
+  You must inspect your traffic capture to answer the following questions:
 
    1. What is the domain name of the users' custom site?
       -frank-n-ted.com
@@ -11,7 +12,7 @@ You must inspect your traffic capture to answer the following questions:
    2. What is the IP address of the Domain Controller (DC) of the AD network?
       -10.6.12.12
 
-Both of these answers can be found here:
+  Both of these answers can be found here:
 ```
  ![LDAP2](Images\LDAPAD2.png)
  
