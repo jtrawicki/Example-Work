@@ -26,7 +26,7 @@
      - **Purpose**: Wordpress Server
      - **IP Address**: 192.168.1.115
 ```
- ![nmapA2](Images/nmapA2)
+ ![nmapA2](Images/nmapA2.png)
  
 
 ### Description of Targets
@@ -47,7 +47,7 @@
     - **Vulnerability Mitigated**: A brute force attack would generate HTTP error responses.  This Watcher alerts if there are an excessive number of HTTP requests in a short                                      period of time
      - **Reliability**: TODO: Based on volume of network traffic, this watcher generates a low amount of false positives.
 ```
- ![Watch1](Images/Watch1.png)
+ ![Watch1](Images/Watch1.PNG)
 
 #### Name of Alert 2
 Alert 2 is implemented as follows:
