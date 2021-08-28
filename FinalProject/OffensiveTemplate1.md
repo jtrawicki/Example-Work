@@ -72,8 +72,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
    ![WPscan2](Images/wpscan2.png)
     
   ```bash
-    - A user shell was obtained for user michael using ssh michael@192.168.1.110 .  A weak password of his own name, michael, was used to log in to the machine.
-    - Looking in /var/www, flag 2 was revealed via an 'ls' command, and the output was found using a cat
+    - A user shell was obtained on michael using 'ssh michael@192.168.1.110'.  A weak password of his own name, michael, was used to log in to the machine.
+    - Inside /var/www, flag 2 was revealed via an 'ls' command, and the output was found using a cat
   - `flag2.txt`: 
   ```
   ![Flag2](Images/flag2a.png)
