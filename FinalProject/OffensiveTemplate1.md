@@ -27,8 +27,6 @@ This scan identifies the services below as potential points of entry:
   445 microsoft-ds
 
 
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
-
 The following vulnerabilities were identified on each target:
 - Target 1
   - List of
@@ -43,7 +41,7 @@ The following vulnerabilities were identified on each target:
    445     netbios-ssn  Samba smbd 3.x
      
 
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities._
+   ![nmapsV](Images/nmapsV)
 
 ### Exploitation
 _TODO: Fill out the details below. Include screenshots where possible._
