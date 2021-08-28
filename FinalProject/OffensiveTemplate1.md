@@ -33,8 +33,8 @@ The following vulnerabilities were identified on each target:
   - Critical
   - Vulnerabilities
 
- ```html
- <b> Port    Service      Version </b>
+ ```bash
+   Port    Service      Version 
    22      ssh          OpenSSH 6.7p1
    80      http         Apache httpd 2.4.10
    111     rpcbind      2-4
@@ -45,11 +45,17 @@ The following vulnerabilities were identified on each target:
    ![nmapsV](Images/nmapsV.png)
 
 ### Exploitation
-_TODO: Fill out the details below. Include screenshots where possible._
+
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
+
+```bash
+
 - Target 1
-  - `flag1.txt`: _TODO: Insert `flag1.txt` hash value_
+  - `flag1.txt`:
+  ```
+   ![Flag1](Images/flag1.png)
+   
     - **Exploit Used**
       - _TODO: Identify the exploit used_
       - _TODO: Include the command run_
