@@ -49,14 +49,7 @@ The following vulnerabilities were identified on each target:
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 
-```bash
-
-- Target 1
-  - `flag1.txt`:
-  ```
-   ![Flag1](Images/flag1a.png)
-   
-   ```bash
+      ```bash
     - **Exploit Used**
       - A WPScan was used to identify the users and vulnerable plugin on the Wordpress server: 
       - The command used:  wpscan --url http://192.168.1.110/wordpress -eu
@@ -66,12 +59,19 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
    ![WPscan1](Images/wpscan1.png)
    ![WPscan2](Images/wpscan2.png)
     
-  
   ```bash
+    - A user shell was obtained for user michael using ssh michael@192.168.1.110 .  A weak password of his own name, michael, was used to log in to the machine.
+    - Looking in /var/www, flag 2 was revealed via an 'ls' command, and the output was found using a cat
   - `flag2.txt`: 
   ```
   ![Flag2](Images/flag2a.png)
   
-    - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+  
+  ```bash
+     - From /var/www, a grep was performed to look for Flag1: grep -RE flag html 
+     - A lengthy output resulted, but the first flag was found at the end of the output.
+  
+- Target 1
+  - `flag1.txt`:
+  ```
+   ![Flag1](Images/flag1a.png)
