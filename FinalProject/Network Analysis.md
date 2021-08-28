@@ -56,10 +56,16 @@ Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/).
 ---
 
 ## Illegal Downloads
+```bash
 
-1. Find the following information about the machine with IP address `10.0.0.201`:
-    - MAC address
-    - Windows username
-    - OS version
+   1. Find the following information about the machine with IP address `10.0.0.201`:
+      - MAC address: 00:16:17:18:66:c8
+ ```
+  ![SRC](Images/trrntsrc.png)
+  
+      - Windows username: elmer.blanco
+
+```
+ 
 
 2. Which torrent file did the user download?
