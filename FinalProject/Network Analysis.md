@@ -63,9 +63,9 @@ Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/).
  ```
   ![SRC](Images/trrntsrc.png)
   
+```bash
       - Windows username: elmer.blanco
-
 ```
- 
+ ![TCNAME](Images/torrentCName.png)
 
 2. Which torrent file did the user download?
