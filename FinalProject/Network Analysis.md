@@ -47,8 +47,11 @@ Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/).
 ```
  ![CNAME](Images/RotterdamUsername.JPG)
  
-4. What are the IP addresses used in the actual infection traffic?
-5. As a bonus, retrieve the desktop background of the Windows host.
+ ```bash
+   3. What are the IP addresses used in the actual infection traffic?
+      -185.243.115.84
+ ```
+  ![Infect](Images/InfConvo.png)
 
 ---
 
