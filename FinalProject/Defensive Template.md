@@ -13,7 +13,7 @@
 
    The following machines were identified on the network:
    - Name of VM 1
-     - **Operating System**:  Windows6.1
+     - **Operating System**:  Linux 3.2-4.9
      - **Purpose**:  Wordpress Server
      - **IP Address**: 192.168.1.110
  ```
@@ -30,24 +30,24 @@
  
 
 ### Description of Targets
-_TODO: Answer the questions below._
 
-The target of this attack was: `Target 1` (TODO: IP Address).
+```bash
 
-Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
+   The target of this attack was: `Target 1`: 192.168.1.110
 
-### Monitoring the Targets
+   Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
-Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
 #### Name of Alert 1
-_TODO: Replace `Alert 1` with the name of the alert._
 
-Alert 1 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+
+   'Excessive HTTP Errors' is implemented as follows:
+     - **Metric**: http.response.status.code
+     - **Threshold**: 400 every 5 minutes
+    - **Vulnerability Mitigated**: A brute force attack would generate HTTP error responses.  This Watcher alerts if there are an excessive number of HTTP requests in a short                                      period of time
+     - **Reliability**: TODO: Based on volume of network traffic, this watcher generates a low amount of false positives.
+```
+ ![Watch1](Images/Watch1.png)
 
 #### Name of Alert 2
 Alert 2 is implemented as follows:
