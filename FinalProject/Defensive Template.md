@@ -45,7 +45,7 @@
      - **Metric**: http.response.status.code
      - **Threshold**: 400 every 5 minutes
      - **Vulnerability Mitigated**: A brute force attack would generate HTTP error responses.  This Watcher alerts if there are an excessive number of HTTP requests in a short period of time
-     - **Reliability**: TODO: Based on volume of network traffic, this watcher generates a low amount of false positives.
+     - **Reliability**: Based on volume of network traffic, this watcher generates a low amount of false positives.
 ```
  ![Watch1](Images/Watch1.PNG)
 
@@ -56,7 +56,7 @@
   - **Metric**: http.request.bytes
   - **Threshold**: 3500 per 1 minute
   - **Vulnerability Mitigated**: A comparitvely large volume of traffic moving ovewr the system would be unusual and warrant investigation.
-  - **Reliability**: TODO: Based on volume of network traffic, this Watcher should not trigger many flase positives.
+  - **Reliability**: Based on volume of network traffic, this Watcher should not trigger many flase positives.
 ```
  ![Watch2](Images/Watch2.PNG)
 
